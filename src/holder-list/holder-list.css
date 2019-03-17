@@ -1,0 +1,7 @@
+
+.disk-container {
+    width:100%;
+    height: 230px;
+    display: flex;
+    flex-wrap: wrap;
+  }

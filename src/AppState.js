@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
-import { moveDisk } from '../store/action'
-import Disk from '../disk/disk-component'
-
+import { resetGame } from './store/action'
+// import Disk from '../disk/disk-component'
+import App from './App'
 
 const mapStateToProps = state => {
     return {
@@ -10,15 +10,15 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        onMoveClick: id => {
-            // dispatch(moveDisk({ id: ownProps.id, position: 8 }))
+        handleClick: () => {
+            dispatch(resetGame())
         }
     }
 }
 
-const MoveDisks = connect(
+const AppState = connect(
     mapStateToProps,
     mapDispatchToProps
-)(Disk)
+)(App)
 
-export default MoveDisks
+export default AppState

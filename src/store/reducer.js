@@ -1,11 +1,14 @@
 import {
     MOVE_DISK,
     JUDGE_WINNER,
+    RECORD_STEP,
+    RESET_GAME
 } from './action'
 
 const initialState = {
     disks: [{ id: 1, position: 0 }, { id: 2, position: 3 }, { id: 3, position: 6 }],
-    winner: false
+    winner: false,
+    step: 0
 }
 
 function disks(state = initialState, action) {
@@ -15,8 +18,8 @@ function disks(state = initialState, action) {
                 ...state,
                 disks: state.disks.map((diskItem) => {
                     console.log(diskItem)
-    
-                    if (diskItem.id == action.disk.id) {
+
+                    if (diskItem.id === action.disk.id) {
                         console.log(action.disk.id)
                         console.log(action.disk.position)
                         return {
@@ -36,6 +39,16 @@ function disks(state = initialState, action) {
                 ...state,
                 winner: gameOver
             }
+
+        case RECORD_STEP:
+            return {
+                ...state,
+                step: state.step + 1
+            }
+
+        case RESET_GAME:
+            return initialState
+
         default:
             return state
     }

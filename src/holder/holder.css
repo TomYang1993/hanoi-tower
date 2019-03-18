@@ -1,7 +1,8 @@
 .holder {
-    width: 30%;
+    width: 28%;
     height: 32%;
-    border: 1px solid black;
-    margin: 0px 10px 0px 10px;
-    background-color: greenyellow;
+    /* border: 1px solid black; */
+    /* margin: 0px 10px 0px 10px; */
+    /* background-color: white; */
+    position: relative;
   }

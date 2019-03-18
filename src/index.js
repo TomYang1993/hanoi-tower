@@ -6,12 +6,13 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import disks from './store/reducer'
+import AppState from './AppState'
 
 const store = createStore(disks)
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <AppState />
     </Provider >, 
     document.getElementById('root'));
 

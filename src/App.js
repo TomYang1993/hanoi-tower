@@ -39,10 +39,20 @@ function App({ state, handleClick }) {
   return (
     <div className="App">
       <div className="spacing"></div>
-      <div className="banner">
-        {state.winner ? <div>You are the winner!</div> : <div></div>}
-        You Took {state.step} Steps already
-        <button onClick={() => handleClick()}>Reset</button>
+      <div className="banner-spacing">
+        <div class="container">
+          <div class="row">
+            <div class="col s6">
+              {state.winner ? <div className="ribbon-banner"><span>You are the winner!</span></div> : <div></div>}
+            </div>
+            <div class="col s4">
+              You Took <strong>{state.step}</strong> Steps already
+          </div>
+            <div class="col s2">
+              <a class="waves-effect waves-light btn grey darken-4 " onClick={() => handleClick()}>Reset</a>
+            </div>
+          </div>
+        </div>
       </div>
       {rodStyle.map((style, index) => {
         return <div key={index} style={style}></div>

@@ -47,7 +47,8 @@ function Disk({ id, onMoveClick, connectDragSource, isDragging, state }) {
                 backgroundImage: 'linear-gradient( -45deg, #5d5d5d 0%, #3f3f3f 27%, #1c1c1c 87% )',
                 margin: 'auto',
                 borderRadius: '3px',
-                zIndex: 1
+                zIndex: 1,
+                boxShadow: '0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)'
             }
             break;
         case 2:
@@ -57,7 +58,8 @@ function Disk({ id, onMoveClick, connectDragSource, isDragging, state }) {
                 backgroundImage: 'linear-gradient( -45deg, #5d5d5d 0%, #3f3f3f 27%, #1c1c1c 87% )',
                 margin: 'auto',
                 borderRadius: '3px',
-                zIndex: 1
+                zIndex: 1,
+                boxShadow: '0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)'
 
             }
             break;
@@ -68,7 +70,8 @@ function Disk({ id, onMoveClick, connectDragSource, isDragging, state }) {
                 backgroundImage: 'linear-gradient( -45deg, #5d5d5d 0%, #3f3f3f 27%, #1c1c1c 87% )',
                 margin: 'auto',
                 borderRadius: '3px',
-                zIndex: 1
+                zIndex: 1,
+                boxShadow: '0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)'
 
             }
             break;
